@@ -7,6 +7,7 @@ Just clone project to you computer and open project bundle in PSoC Creator, then
 ## Hardware information
 - System clock: 48MHz
 - UART baud: 115200 (I've tried 23400 but not success, can loose some session with baud 115200)
+- I2C Speed: 100kB/s (success)
 
 ## Author
 Duong Tran Van

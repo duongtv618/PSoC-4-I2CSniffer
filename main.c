@@ -72,18 +72,17 @@ int main(void)
         {
             /** Wait for SCL = 1 and SDA = 0 => Start condition */
             while (((SCL_Read() == 1) && (SDA_Read() == 0)) == 0);
-            /** To except error and exit the while loop */
+            /** To ignore error and exit the while loop */
             start = SCL_Read();
         }
-        int k = 0;
         /** Set this before a session begin */
+        int k = 0;
         do
         {
             k = 0;
             /** Read 8 bit and store to outHex */
             while (k < 8)
             {
-                
                 /** Wait for rising edge of SCL */
                 while (SCL_Read() == 1){
                     if (meetStopCondition)

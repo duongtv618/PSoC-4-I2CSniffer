@@ -2,7 +2,6 @@
  * \file main.c
  * \author Duong (duongtv618@gmail.com)
  * \brief I2C Sniffer with PSOC
- * Master communicate with I2C about 15 times per second
  * \version 0.1
  * \date 2019-09-18
  * 
@@ -38,8 +37,6 @@ void callback(){
 
 /**
  * \brief SDA interrupt with rising egde service to detect stop condition
- * 
- * 
  * 
  */
 CY_ISR(SDA_isr){
@@ -78,15 +75,6 @@ int main(void)
             /** To except error and exit the while loop */
             start = SCL_Read();
         }
-        /** For count start condition in a second, about 15 per second */
-        //count++;
-        //if (millis - lastmillis >= 1000){
-        //    lastmillis = millis;
-        //    char msg[20];
-        //    sprintf(msg, "Count: %d\r\n", count);
-        //    UART_UartPutString(msg);
-        //    count = 0;            
-        //}
         int k = 0;
         /** Set this before a session begin */
         do

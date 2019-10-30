@@ -12,7 +12,6 @@ Just clone project to you computer and open project bundle in PSoC Creator, then
 ## Author
 Duong Tran Van
 - Email: duongtv618@gmail.com
-- Whatsapp/Skype: +84947193108
 
 ## License
 MIT License
